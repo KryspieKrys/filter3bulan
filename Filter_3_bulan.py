@@ -75,3 +75,15 @@ tampilkan_top_50(
     'Persentase_Penurunan_Local_ID_Dec → Feb', 'Nominal_Penurunan_Local_ID_Dec → Feb',
     'Dec → Feb'
 )
+import sys
+import pandas as pd
+
+print(f"Python version: {sys.version}")
+print(f"Pandas version: {pd.__version__}")
+
+try:
+    import openpyxl
+    print("openpyxl is installed ✅")
+except ImportError:
+    print("openpyxl is NOT installed ❌")
+
